@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <!-- Hier verweisen wir auf das Swiper css im web -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <!-- Hier verweisen wir auf unser style.css im selben ordner lokal -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Unser Swiper  mit drei bildern und previous und next button -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/a.jpg"></div>
+                <div class="swiper-slide"><img src="./images/b.jpg"></div>
+                <div class="swiper-slide"><img src="./images/c.jpg"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        
+        <!-- Ganz am Ende in unserem Body text laden wir das Javascript von Swiper -->
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        
+        <!-- Als letztes müssen wir unseren Swiper ein paar Regeln geben -->
+        <script>
+            var mySwiper = new Swiper ('.swiper-container', {
+                // Hier kann ich einige Regeln definieren eine Anleitung dazu gibt es auf: https://swiperjs.com/get-started/
+
+                // Wenn Loop true ist, dann kann man endlos nach links oder nach rechts, bais false gibts ein anfang und ein ende
+                loop: true,
+            
+                // Hier werden die previous und next button zugeordnet
+                navigation: {
+                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next',
+                },
+            })
+        </script>
+    </body>
+</html>

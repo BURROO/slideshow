@@ -1,0 +1,26 @@
+/* STYLING VON HTML TAGS */
+
+
+/* 
+html{
+    width: 100vw;
+}
+body{
+    width: 100vw;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-count: 3;
+} */
+
+img{
+    width: 100%;
+}
+
+
+/* STYLING VON KLASSEN */
+/* 
+.imageWrapper{
+    padding: 30px;
+    background: yellow
+} */
